@@ -1,36 +1,9 @@
 {
-  "name": "workshop-advanced-workflow-gulp",
-  "version": "0.0.1",
-  "description": "Workshop Advanced Workflow - Gulp",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@rollup/plugin-babel": "^5.2.1",
-    "@rollup/stream": "^1.1.0",
-    "@shopify/themekit": "^1.1.6",
-    "archiver": "^5.0.0",
-    "del": "^6.0.0",
-    "dotenv": "^8.2.0",
-    "gulp": "^4.0.2",
-    "gulp-flatten": "^0.4.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
-    "node-sass": "^4.14.1",
-    "rollup": "^2.28.2",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
-  },
-  "scripts": {
-    "build": "./node_modules/.bin/gulp build",
-    "clean": "./node_modules/.bin/gulp clean",
-    "deploy": "./node_modules/.bin/gulp deploy",
-    "start": "./node_modules/.bin/gulp start",
-    "watch": "./node_modules/.bin/gulp watch",
-    "zip": "node -e 'require(\"./workflow/zip/zip.js\").zip()'"
-  }
+  "name": "workshop-advanced-gulp",
+  "version": "1.0.0",
+  "description": "Advanced gulp based workflow for Shopify for use with WorkshopCLI.",
+  "main": "index.js",
+  "repository": "git@github.com:WorkshopCLI/workshop-advanced-gulp.git",
+  "author": "salexzee <510samwebb@gmail.com>",
+  "license": "MIT"
 }
