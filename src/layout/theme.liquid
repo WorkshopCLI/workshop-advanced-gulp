@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}">
+
+    {{ content_for_header }}
+
+    {{- 'theme.css' | asset_url | stylesheet_tag -}}
+  </head>
+
+  <body>
+    <main>
+      {% section 'header' %}
+      {{ content_for_layout }}
+      {% section 'footer' %}
+    </main>
+
+    <script src="{{ 'theme.js' | asset_url }}"></script>
+  </body>
+</html>

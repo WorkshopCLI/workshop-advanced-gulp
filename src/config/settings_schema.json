@@ -1,0 +1,10 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Basic Theme",
+    "theme_author": "Sam Webb",
+    "theme_version": "1.0.0",
+    "theme_support_email": "example@example.com",
+    "theme_documentation_url": "https://example.com"
+  }
+]
