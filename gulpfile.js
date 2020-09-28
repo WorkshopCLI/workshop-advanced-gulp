@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const { series } = require('gulp');
 
 const build = require('./workflow/tasks/build');

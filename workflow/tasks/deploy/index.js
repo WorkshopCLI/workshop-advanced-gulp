@@ -1,12 +1,7 @@
-const gulpShopify = require('gulp-shopify-upload');
+const themekit = require('@shopify/themekit');
 
-const deploy = async () => {
-  return gulpShopify(
-    process.env.STORE_KEY,
-    process.env.STORE_PASSWORD,
-    process.env.STORE,
-    process.env.STORE_THEME_ID
-  )
-};
+const deploy = () => themekit.command('deploy', {
+  ignoredFiles: ['config/settings_data.json']
+});
 
 module.exports = deploy;
