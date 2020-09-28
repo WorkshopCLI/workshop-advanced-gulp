@@ -1,7 +1,7 @@
 {
-  "name": "workshop-advanced-workflow-gulp",
+  "name": "workshop-advanced-gulp-workflow",
   "version": "0.0.1",
-  "description": "Workshop Advanced Workflow - Gulp",
+  "description": "Workshop Advanced Gulp Workflow",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {

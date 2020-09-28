@@ -8,6 +8,9 @@ const styles = require('../styles');
 const watchScripts = () => watch('src/scripts/**/*.js', [scripts]);
 const watchStyles = () => watch('src/styles/**/*.scss', [styles]);
 
-const watcher = async () => series(watchScripts, watchStyles);
+const watcher = async () => {
+  watchScripts();
+  watchStyles();
+};
 
 module.exports = watcher;

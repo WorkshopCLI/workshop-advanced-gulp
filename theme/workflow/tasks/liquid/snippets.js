@@ -2,7 +2,7 @@ const { src, dest } = require('gulp');
 const flatten = require('gulp-flatten');
 
 const snippets = () =>
-  src('src/liquid/snippets/**/*.liquid', { base: 'src' })
+  src('src/liquid/snippets/**/*.liquid', { base: 'src/liquid' })
     .pipe(flatten({ includeParents: 1 }))
     .pipe(dest('dist'));
 
