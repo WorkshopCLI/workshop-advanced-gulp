@@ -6,9 +6,13 @@ An advanced Shopify workflow using Gulp. This is a completely blank theme that g
 
 ## Setup Env
 
-- Copy setup.config.yml into a new file called config.yml `cp ./setup.config.yml ./config.yml`
-- Update settings based on [Shopify's Theme Kit documentation](https://shopify.github.io/themekit/commands/#configure) 
-- You'll need a "development" namespace for the next step
+- Copy example.env into a new file called .env `cp ./example.env ./.envl`
+- You'll need to set following:
+  - PASSWORD (API password)
+  - THEME_ID
+  - STORE (ex. store-name.myshopify.com)
+
+  *This file is for your personal environment variables. Do not share with anyone and do not add to git repository.*
 
 ## Create New Theme on Storefront
 
