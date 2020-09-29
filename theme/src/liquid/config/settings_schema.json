@@ -1,10 +1,10 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Basic Theme",
+    "theme_name": "Advanced Gulp Theme",
     "theme_author": "Sam Webb",
     "theme_version": "1.0.0",
-    "theme_support_email": "example@example.com",
-    "theme_documentation_url": "https://example.com"
+    "theme_support_email": "sam@samthewebb.com",
+    "theme_documentation_url": "https://samthewebb.com"
   }
 ]
