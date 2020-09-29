@@ -28,6 +28,7 @@
     "build": "./node_modules/.bin/gulp build",
     "clean": "./node_modules/.bin/gulp clean",
     "deploy": "./node_modules/.bin/gulp deploy",
+    "images": "./node_modules/.bin/gulp images",
     "start": "./node_modules/.bin/gulp start",
     "watch": "./node_modules/.bin/gulp watch",
     "zip": "node -e 'require(\"./workflow/zip/zip.js\").zip()'"
