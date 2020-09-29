@@ -30,6 +30,7 @@
     "deploy": "./node_modules/.bin/gulp deploy",
     "images": "./node_modules/.bin/gulp images",
     "start": "./node_modules/.bin/gulp start",
+    "static": "./node_modules/.bin/gulp static",
     "watch": "./node_modules/.bin/gulp watch",
     "zip": "node -e 'require(\"./workflow/zip/zip.js\").zip()'"
   }
