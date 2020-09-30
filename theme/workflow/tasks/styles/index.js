@@ -5,7 +5,7 @@ const rename = require('gulp-rename');
 
 sass.compiler = require('node-sass')
 
-const styles = () => src('src/styles/index.scss')
+const styles = () => src('src/styles/theme.scss')
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write())

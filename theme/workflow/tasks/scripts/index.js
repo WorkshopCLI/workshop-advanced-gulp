@@ -8,7 +8,7 @@ const sourcemaps = require('gulp-sourcemaps');
 let cache;
 const scripts = () =>
   rollup({
-    input: './src/scripts/index.js',
+    input: './src/scripts/theme.js',
     plugins: [],
     sourcemap: true,
     cache: cache,
