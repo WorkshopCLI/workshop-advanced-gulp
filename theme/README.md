@@ -129,3 +129,11 @@ All custom CSS should be written in this folder. This workflow uses SCSS as it's
 ### /src/svg
 
 Add SVGs to this file if you plan to use them in your liquid. When the "svg" task runs it will convert the files from this folder into liquid files, prepend "svg-" to the beginning of the name and build them to /dist/snippets. For SVGs that will not be used in liquid, add them to /src/images.
+
+## Custom Configuration
+
+The workflow can be customized by editing workflow/config/config.js.
+
+### shopifyPlus
+
+{Boolean} - Default: false - Determines if workflow should build for Shopify Plus storefronts. Basically this determines if checkout.liquid, checkout.scss and checkout.js should go through the build process
