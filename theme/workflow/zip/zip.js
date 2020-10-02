@@ -3,7 +3,7 @@ const archiver = require('archiver')
 
 const zip = () => {
   const name = process.argv[1] || 'workshop-basic-theme'
-  const output = fs.createWriteStream(__dirname + `/${name}.zip`)
+  const output = fs.createWriteStream(process.cwd() + `/${name}.zip`)
   const archive = archiver("zip", {
     zlib: { level: 9 }, // Sets the compression level.
   })
