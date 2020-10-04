@@ -1,6 +1,6 @@
 {
   "name": "@workshop-cli/workshop-advanced-gulp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Advanced gulp based workflow for Shopify for use with WorkshopCLI.",
   "main": "index.js",
   "repository": "git@github.com:WorkshopCLI/workshop-advanced-gulp.git",
