@@ -132,8 +132,12 @@ Add SVGs to this file if you plan to use them in your liquid. When the "svg" tas
 
 ## Custom Configuration
 
-The workflow can be customized by editing workflow/config/config.js.
+The workflow can be customized by editing build.config.js.
 
 ### shopifyPlus
 
 {Boolean} - Default: false - Determines if workflow should build for Shopify Plus storefronts. Basically this determines if checkout.liquid, checkout.scss and checkout.js should go through the build process
+
+### babel
+
+{Boolean} - Default: true - Determins if workflow should transpile code with Babel.
