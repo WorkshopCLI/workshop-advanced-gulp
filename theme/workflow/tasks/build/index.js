@@ -2,10 +2,10 @@ const { series } = require('gulp');
 
 const buildConfig = require('../../../build.config');
 
-const checkoutScripts = require('../checkout-scripts');
+const checkoutScripts = require('../scripts/checkout');
 const checkoutStyles = require('../checkout-styles');
 const liquid = require('../liquid');
-const scripts = require('../scripts');
+const scripts = require('../scripts/theme');
 const styles = require('../styles');
 
 const seriesItems = [liquid, scripts, styles];

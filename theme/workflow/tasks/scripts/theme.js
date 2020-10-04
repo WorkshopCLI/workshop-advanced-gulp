@@ -23,9 +23,8 @@ if (buildConfig.babel) {
 
 const scripts = () =>
   rollup({
-    input: './src/scripts/checkout.js',
+    input: './src/scripts/theme.js',
     plugins: plugins,
-    sourcemap: true,
     cache: cache,
     output: {
       format: 'iife',
@@ -33,7 +32,7 @@ const scripts = () =>
     },
   })
     .on('bundle', (bundle) => (cache = bundle))
-    .pipe(source('checkout.js'))
+    .pipe(source('theme.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sourcemaps.write('.'))
