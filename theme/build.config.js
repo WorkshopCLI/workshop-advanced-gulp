@@ -4,7 +4,7 @@ module.exports = {
    *
    * {Boolean} Default: false
    */
-  shopifyPlus: true,
+  shopifyPlus: false,
   /**
    * Determins if code should be transpiled through Babel
    *
