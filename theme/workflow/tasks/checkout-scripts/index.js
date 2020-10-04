@@ -1,3 +1,5 @@
+const buildConfig = require('../../../build.config');
+
 const rollup = require('@rollup/stream');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
@@ -5,18 +7,30 @@ const buffer = require('vinyl-buffer');
 const { dest } = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 
+const plugins = [];
+
 let cache;
+
+if (buildConfig.babel) {
+  const { getBabelOutputPlugin } = require('@rollup/plugin-babel');
+  plugins.push(
+    getBabelOutputPlugin({
+      presets: ['@babel/preset-env'],
+      allowAllFormats: true,
+    })
+  );
+}
+
 const scripts = () =>
   rollup({
     input: './src/scripts/checkout.js',
-    plugins: [],
+    plugins: plugins,
     sourcemap: true,
     cache: cache,
     output: {
       format: 'iife',
       sourcemap: true,
     },
-    format: 'iife',
   })
     .on('bundle', (bundle) => (cache = bundle))
     .pipe(source('checkout.js'))

@@ -1,5 +1,5 @@
 const { src, dest } = require('gulp');
-const buildConfig = require('../../config/config');
+const buildConfig = require('../../../build.config');
 
 const path = 'src/liquid/layout/';
 
