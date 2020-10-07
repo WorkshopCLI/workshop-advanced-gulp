@@ -8,7 +8,7 @@
 
 ### Changed
 
-- [#9](#9) Only build liquid files that changed during watch instead of rebuilding the entire liquid directory
+- [#9](https://github.com/WorkshopCLI/workshop-advanced-gulp/issues/9) Only build liquid files that changed during watch instead of rebuilding the entire liquid directory
 - Watch liquid subfolders individually for changes instead of watching entire liquid directory
 
 ### Removed
