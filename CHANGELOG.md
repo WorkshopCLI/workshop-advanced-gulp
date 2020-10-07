@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.9 (10.XX.2020)
+## 1.0.9 (10.07.2020)
 
 ### Added
 
@@ -16,3 +16,5 @@
 - No updates
 
 ### Fixed
+
+- No updates
