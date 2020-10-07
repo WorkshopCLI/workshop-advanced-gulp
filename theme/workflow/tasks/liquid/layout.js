@@ -1,5 +1,7 @@
 const { src, dest } = require('gulp');
 const buildConfig = require('../../../build.config');
+const changed = require('gulp-changed');
+const dist = 'dist';
 
 const path = 'src/liquid/layout/';
 
@@ -12,6 +14,8 @@ if (!buildConfig.shopifyPlus) {
 }
 
 const layout = () =>
-  src(`${path}**/*.liquid`, srcOptions).pipe(dest('dist'));
+  src(`${path}**/*.liquid`, srcOptions)
+    .pipe(changed(dist))
+    .pipe(dest(dist));
 
 module.exports = layout;
