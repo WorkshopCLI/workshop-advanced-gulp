@@ -4,7 +4,7 @@
 
 ### Added
 
-- No updates
+- [#23](https://github.com/WorkshopCLI/workshop-advanced-gulp/issues/23) Add ability to use dynamic sections on homepage by default
 
 ### Changed
 
