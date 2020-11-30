@@ -1,13 +1,14 @@
 const buildConfig = require('../../../build.config');
 
 const rollup = require('@rollup/stream');
+const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 
 const { dest } = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 
-const plugins = [];
+const plugins = [resolve()];
 
 let cache;
 
