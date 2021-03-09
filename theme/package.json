@@ -35,6 +35,6 @@
     "static": "./node_modules/.bin/gulp static",
     "svg": "./node_modules/.bin/gulp svg",
     "watch": "./node_modules/.bin/gulp watch",
-    "zip": "node -e 'require(\"./workflow/zip/zip.js\").zip()'"
+    "zip": "node -e \"require('./workflow/zip/zip.js').zip()\""
   }
 }
