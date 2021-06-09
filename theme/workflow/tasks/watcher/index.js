@@ -24,6 +24,20 @@ if (buildConfig.shopifyPlus) {
   stylesSeries.push(checkoutStyles);
 }
 
+const themekitConfig = {
+  ignoredFiles: ['config/settings_data.json'],
+};
+
+process.argv.forEach((arg) => {
+  if (arg === '--allow-live') {
+    themekitConfig.allowLive = true;
+  }
+
+  if (arg.indexOf('--env=') >= 0) {
+    themekitConfig.env = arg.split('=')[1];
+  }
+});
+
 const watcher = async () => {
   watch('src/images/**/*', series([images]));
   watch('src/liquid/config/**/*.json', series([liquidConfig]));
@@ -37,9 +51,7 @@ const watcher = async () => {
   watch('src/styles/**/*.scss', series(stylesSeries));
   watch('src/svg/**/*', series([svg]));
 
-  themekit.command('watch', {
-    ignoredFiles: ['config/settings_data.json'],
-  });
+  themekit.command('watch', themekitConfig);
 };
 
 module.exports = watcher;
